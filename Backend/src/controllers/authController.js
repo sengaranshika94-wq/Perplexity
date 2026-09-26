@@ -29,7 +29,7 @@ async function registerController(req,res){
         to:email,
         subject:"Welcome to Perplexity!",
         html:`<p>hi ${username},</p>
-        <p>Thank you for regestring at<strong>Perplexity</strong></p>`
+        <p>Thank you for regestring at<strong>Perplexity</strong>.We're excited to have you on board!\n\n Best regards,\nThe Perplexity tea</p>`
     })
 
     return res.status(201).json({
